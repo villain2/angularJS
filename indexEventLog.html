@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+	<title>Config Function</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+</head>
+<body>
+
+<div ng-app="app">
+
+    <div class="button" ng-repeat="item in 'somewords'.split('')"
+         ng-click="$log.log($event)">
+        {{$index + 1}}. {{item}}
+        {{ev.pageX}}
+    </div>
+    
+</div>
+	
+	<!--  JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="js/indexEventLog.js"></script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>

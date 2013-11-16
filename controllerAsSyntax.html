@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+	<title>Controller As Syntax</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+</head>
+<body>
+
+<div ng-app="app" ng-controller="RoomCtrl as room">
+    <div class="button" ng-click="room.openDoor()">
+        {{room.buttonTitle}}
+        
+        <div ng-controller="OtherCtrl as other">
+            {{room.foo}}
+            {{other.foo}}
+        </div>
+        
+    </div>
+    
+</div>
+	
+	<!--  JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+	<script src="js/controllerAsSyntax.js"></script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>
