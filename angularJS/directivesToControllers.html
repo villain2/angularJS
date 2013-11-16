@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Directives To Controllers</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	
+    <div ng-app="twitterApp">
+        <div ng-controller="AppCtrl">
+            <div enter="loadMoreTweets()">Roll over me to load more tweets.</div>
+        </div>
+    </div>
+	
+	
+	<!--  JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="js/directivesToControllers.js"></script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>
