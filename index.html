@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Some Stuff in AngularJS</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	
+    <div ng-app="myApp">
+		
+        
+        <div ng-controller="DDCtrl">
+            <input type="text" ng-model="search.$">
+            <table>
+                <tr ng-repeat="actor in dd.cast | orderBy:'name' | limitTo:3 | filter:search">
+                    <td>{{actor.name}}</td>
+                    <td>{{actor.origin | uppercase}}</td>
+                </tr>
+            </table>
+        </div>
+		<!--
+		<div ng-controller="FirstCtrl">
+			<input type="text" ng-model="data.message">
+			<h2>{{data.message}}</h2>
+		</div>
+		
+		
+		
+		<div ng-controller="SecondCtrl">
+			<input type="text" ng-model="data.message">
+			<h2>{{data.message|reverse}}</h2>
+		</div>
+		-->
+	</div>
+	
+	
+	<!--  JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="js/Main.js"></script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>

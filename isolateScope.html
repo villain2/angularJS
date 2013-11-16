@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Isolate Scope</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+	
+    <!-- ISOLATE SCOPE WITH & -->
+    <div ng-app="phoneApp">
+        <div ng-controller="AppCtrl">
+            <div phone dial="callHome(message)"></div>
+        </div>
+    </div>
+    
+    <!-- ISOLATE SCOPE WITH = SIGN -->
+    <!--
+    <div ng-app="drinkApp">
+        <div ng-controller="AppCtrl">
+            <label>Ctrl</label>
+            <input type="text" ng-model="ctrlFlavor">
+            
+            <label>Directive</label>
+            <div drink flavor="ctrlFlavor"></div>
+        </div>
+    </div>
+    
+    <!-- ISOLATED SCOPE WITH @ SIGN -->
+    <!--
+    <div ng-app="drinkApp">
+        <div ng-controller="AppCtrl">
+            <input ng-model="ctrlFlavor">
+            <div drink flavor="{{ctrlFlavor}}"></div>
+        </div>
+    </div>
+    -->
+    
+    <!--
+    <div ng-app="choreApp">
+        <div ng-controller="ChoreCtrl">
+            <kid done="logChore(chore)"></kid>
+        </div>
+        
+    </div>
+	-->
+	
+	<!--  JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="js/isolateScope.js"></script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>

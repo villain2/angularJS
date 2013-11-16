@@ -1,0 +1,8 @@
+@mixin fArial ($fontSize, $fontColor, $fontWeight)
+{
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: $fontSize;
+	font-weight: $fontWeight;
+	color: $fontColor;
+}
+
