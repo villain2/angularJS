@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+	<title>Animations</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<div ng-app="app">
+        
+    <button class="btn" ng-click="app.toggle=!app.toggle">Toggle Animation</button>
+   
+    <div class="toggle" ng-if="app.toggle">Some content here</div>
+    
+</div>
+	
+	<!--  JAVASCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+	<script src="js/animations.js"></script>
+	<!-- END JAVASCRIPT -->
+</body>
+</html>
