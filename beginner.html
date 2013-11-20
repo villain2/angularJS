@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- credit: http://www.revillwebdesign.com/angularjs-tutorial/ -->
+    <title>Learning AngluarJS - Beginner</title>
+	<link rel="stylesheet" href="css/foundation.min.css">
+</head>
+<body>
+
+    <div id="content" data-ng-app="MyAppTutorial" data-ng-controller="MainController">
+
+
+        <input type="text" data-ng-model="searchText">
+        <ul>
+            <li data-ng-repeat="person in people | filter:searchText" data-ng-show="person.live == true">#{{person.id}} : {{person.name}}</li>
+        </ul>
+
+        <input type="text" data-ng-model="newPerson">
+
+        <button data-ng-click="addNew()">Add New Person</button>
+
+        <!--
+        <input type="text" data-ng-model="searchText">
+
+        <ul>
+            <li data-ng-repeat='person in people | filter:searchText' data-ng-show="person.live == true">#{{person.id}} : {{person.name}}</li>
+            <li data-ng-repeat='person in people | filter:searchText' data-ng-show="person.live == false">#{{person.id}} : {{person.name}}</li>
+        </ul>
+        -->
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- END JAVASCRIPT -->
+</body>
+</html>
